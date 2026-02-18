@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+
+<head>
+    <!-- 
+        CONFIGURAÇÕES DE SEO E METADADOS 
+        Essenciais para aparecer bem no Google em Moçambique e Internacionalmente.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título Otimizado para SEO Global -->
+    <title>Lumora Tech | Web Design & E-commerce (Mozambique & Global)</title>
+    
+    <!-- Descrição foca em qualidade internacional -->
+    <meta name="description" content="Agência de desenvolvimento web em Moçambique. Criamos sites de nível mundial, lojas virtuais e sistemas. Pagamentos via M-Pesa, PayPal e Visa.">
+    
+    <meta name="keywords" content="criação de sites moçambique, web design maputo, outsourcing it mozambique, website developer africa, lumora tech">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lumoratech.co.mz/">
+    <meta property="og:title" content="Lumora Tech - Soluções Digitais Globais">
+    <meta property="og:description" content="Sites de alta performance e Lojas Virtuais. Aceitamos M-Pesa, PayPal e Visa.">
+    <meta property="og:image" content="../src/images/escola-solucao.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="../src/styles/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="100">
+
+    <!-- LOADER -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader-content">
+            <div class="spinner-grow text-primary" role="status"></div>
+            <span class="ms-2 fw-bold tracking-wider">LUMORA TECH</span>
+        </div>
+    </div>
+
+    <!-- BACKGROUND LIGHTS -->
+    <div class="ambient-light light-1"></div>
+    <div class="ambient-light light-2"></div>
+    <div class="ambient-light light-3"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar-main">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <div class="brand-icon me-2">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <span class="fw-bold text-white">Lumora <span class="text-primary">Tech</span></span>
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" id="navToggler">
+                <i class="fa-solid fa-bars-staggered text-white fs-3" id="navIcon"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio" data-i18n="nav_home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos" data-i18n="nav_services">Soluções</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#processo" data-i18n="nav_process">Método</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio" data-i18n="nav_portfolio">Cases</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#precos" data-i18n="nav_prices">Planos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pagamentos-global" data-i18n="nav_pay">Pagamentos</a></li> <!-- Link Novo -->
+                    <li class="nav-item"><a class="nav-link" href="#sobre" data-i18n="nav_about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq" data-i18n="nav_faq">FAQ</a></li>
+                    
+                    <li class="nav-item ms-lg-3">
+                        <span class="lang-badge" id="langSwitch">
+                            <span class="active-lang">PT</span> / <span class="inactive-lang">EN</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero-section d-flex align-items-center">
+        <div class="container position-relative z-2">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 animate-fade-up">
+                    <div class="badge-pill mb-3">
+                        <span class="dot"></span> <span data-i18n="hero_badge">Qualidade Internacional</span>
+                    </div>
+                    <!-- CORREÇÃO TRADUÇÃO: data-i18n aplicados corretamente -->
+                    <h1 class="display-3 fw-bold mb-4 leading-tight">
+                        <span data-i18n="hero_title_1">Transforme Visitantes</span> <br>
+                        <span data-i18n="hero_title_2">em</span> <span class="text-gradient" data-i18n="hero_title_3">Clientes Globais</span>
+                    </h1>
+                    <p class="lead text-muted-light mb-5" style="max-width: 550px;" data-i18n="hero_desc">
+                        Desenvolvimento web de alto padrão para empresas em Moçambique e no Mundo. Pagamentos flexíveis e tecnologia de ponta.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap mb-5 justify-content-lg-start justify-content-center">
+                        <button class="btn btn-primary-glow px-5 py-3 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#contactModal">
+                            <span data-i18n="btn_quote">Quero Vender Mais</span>
+                        </button>
+                        <a href="#portfolio" class="btn btn-outline-glass px-5 py-3 rounded-pill fw-bold">
+                            <span data-i18n="btn_portfolio">Ver Portfólio</span>
+                        </a>
+                    </div>
+
+                    <!-- Authority Bar -->
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center gap-4 text-muted-light small mt-4 border-top border-white-10 pt-4">
+                        <div class="d-flex align-items-center">
+                            <h2 class="fw-bold text-white mb-0 me-2">30+</h2>
+                            <span class="fs-6 lh-sm" data-i18n="auth_projects">Projetos<br>Entregues</span>
+                        </div>
+                        <div class="vr bg-secondary opacity-50 d-none d-md-block"></div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-brands fa-paypal text-primary fs-3 me-2"></i>
+                            <span class="fs-6 lh-sm fw-bold text-white" data-i18n="auth_global_pay">Pagamentos<br>Internacionais</span>
+                        </div>
+                        <div class="vr bg-secondary opacity-50 d-none d-md-block"></div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-shield-halved text-primary fs-3 me-2"></i>
+                            <span class="fs-6 lh-sm fw-bold text-white" data-i18n="auth_partner">Tecnologia<br>Segura & Rápida</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 text-center animate-fade-in delay-200 d-none d-lg-block">
+                    <div class="cube-container">
+                        <div class="cube cube-1"></div>
+                        <div class="cube cube-2"></div>
+                        <div class="cube cube-3"></div>
+                        <div class="cube cube-main">
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="servicos" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 pb-4">
+                <span class="text-primary text-uppercase fw-bold tracking-widest small" data-i18n="serv_mini_title">Nossa Expertise</span>
+                <!-- CORREÇÃO TRADUÇÃO: Dividimos o H2 para manter o gradiente no "Digitais" -->
+                <h2 class="fw-bold text-white display-5 mt-2">
+                    <span data-i18n="serv_title_main">Soluções</span> 
+                    <span class="text-gradient" data-i18n="serv_title_gradient">Digitais</span>
+                </h2>
+                <p class="text-muted-light mt-3" style="max-width: 700px; margin: 0 auto;" data-i18n="serv_main_desc">
+                    Ferramentas de negócios que funcionam 24h por dia, em qualquer lugar do mundo.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="service-card-premium">
+                        <div class="d-flex align-items-start">
+                            <div class="service-icon-box cyan-glow me-4">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="serv_1_title">Sites Institucionais</h4>
+                                <p class="text-muted-light" data-i18n="serv_1_desc">Sites rápidos, otimizados para o Google (SEO) e que passam credibilidade imediata para quem visita.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card-premium">
+                        <div class="d-flex align-items-start">
+                            <div class="service-icon-box blue-glow me-4">
+                                <i class="fa-solid fa-filter-circle-dollar"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="serv_2_title">Landing Pages (Vendas)</h4>
+                                <p class="text-muted-light" data-i18n="serv_2_desc">Páginas de alta conversão desenhadas especificamente para campanhas de publicidade e captura de leads.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card-premium">
+                        <div class="d-flex align-items-start">
+                            <div class="service-icon-box purple-glow me-4">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="serv_3_title">Lojas Virtuais (E-commerce)</h4>
+                                <p class="text-muted-light" data-i18n="serv_3_desc">Venda para o mundo. Integração com M-Pesa (local) e PayPal/Stripe (Internacional).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card-premium">
+                        <div class="d-flex align-items-start">
+                            <div class="service-icon-box teal-glow me-4">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <h4 data-i18n="serv_4_title">Sistemas Web / Portais</h4>
+                                <p class="text-muted-light" data-i18n="serv_4_desc">Automatize a gestão da sua escola, clínica ou empresa com sistemas personalizados e seguros.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="processo" class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-primary text-uppercase fw-bold tracking-widest small" data-i18n="proc_mini_title">Passo a Passo</span>
+                <!-- CORREÇÃO TRADUÇÃO: Dividido em spans -->
+                <h2 class="fw-bold text-white display-5 mt-2">
+                    <span data-i18n="proc_title_main">Método</span> 
+                    <span class="text-white" data-i18n="proc_title_sub">Remoto & Ágil</span>
+                </h2>
+                <p class="text-muted-light" data-i18n="proc_main_desc">Transparência total, esteja você em Maputo ou Lisboa.</p>
+            </div>
+
+            <div class="row g-4 position-relative">
+                <div class="process-line d-none d-lg-block"></div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step text-center">
+                        <div class="step-number">01</div>
+                        <h5 class="text-white mt-4 fw-bold" data-i18n="proc_1_title">Briefing Online</h5>
+                        <p class="text-muted-light small" data-i18n="proc_1_desc">Reunião via Google Meet/Zoom.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step text-center">
+                        <div class="step-number">02</div>
+                        <h5 class="text-white mt-4 fw-bold" data-i18n="proc_2_title">Design & UX</h5>
+                        <p class="text-muted-light small" data-i18n="proc_2_desc">Aprovação do layout antes de codar.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step text-center">
+                        <div class="step-number">03</div>
+                        <h5 class="text-white mt-4 fw-bold" data-i18n="proc_3_title">Dev & Testes</h5>
+                        <p class="text-muted-light small" data-i18n="proc_3_desc">Programação otimizada.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step text-center">
+                        <div class="step-number">04</div>
+                        <h5 class="text-white mt-4 fw-bold" data-i18n="proc_4_title">Entrega Global</h5>
+                        <p class="text-muted-light small" data-i18n="proc_4_desc">Treinamento e publicação.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 pb-4">
+                <span class="text-primary text-uppercase fw-bold tracking-widest small" data-i18n="port_subtitle">Antes & Depois</span>
+                <h2 class="fw-bold text-white display-5 mt-2" data-i18n="port_title">Resultados Reais</h2>
+            </div>
+
+            <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Case 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="portfolio-split-card group" data-title="Clínica Vida + Saúde"
+                                    data-category="Saúde / Gestão" data-link="#"
+                                    data-before-img="../src/images/escola.png"
+                                    data-before-desc="Processos manuais, perda de fichas e agendamento lento."
+                                    data-before-desc-en="Manual processes, lost files and slow scheduling."
+                                    data-after-img="../src/images/escola-solucao.png"
+                                    data-after-desc="Sistema de Gestão Completo. Agendamento online, histórico digital e redução de 80% na papelada."
+                                    data-after-desc-en="Complete Management System. Online booking, digital history and 80% less paperwork.">
+                                    <div class="split-visual">
+                                        <div class="side before"
+                                            style="background-image: url('../src/images/escola.png');">
+                                            <span class="label bg-danger text-white">PROBLEMA</span>
+                                        </div>
+                                        <div class="separator-line">
+                                            <div class="vs-badge">VS</div>
+                                        </div>
+                                        <div class="side after"
+                                            style="background-image: url('../src/images/escola-solucao.png');">
+                                            <span class="label bg-success text-white">SOLUÇÃO</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 text-center">
+                                        <h4 class="text-white mb-1 fw-bold">Clínica Vida + Saúde</h4>
+                                        <span class="text-primary small fw-bold">SISTEMA DE GESTÃO HOSPITALAR</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Case 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="portfolio-split-card group" data-title="Escola Secundária Horizon"
+                                    data-category="Educação / Portal" data-link="#"
+                                    data-before-img="../src/images/escola.png"
+                                    data-before-desc="Comunicação difícil com pais e falta de controle de pagamentos."
+                                    data-before-desc-en="Difficult communication with parents and lack of payment control."
+                                    data-after-img="../src/images/escola-solucao.png"
+                                    data-after-desc="Portal do Aluno e App. Notas em tempo real e pagamentos de mensalidade integrados ao M-Pesa."
+                                    data-after-desc-en="Student Portal and App. Real-time grades and tuition payments via M-Pesa.">
+                                    <div class="split-visual">
+                                        <div class="side before"
+                                            style="background-image: url('../src/images/escola.png');">
+                                            <span class="label bg-danger text-white">PROBLEMA</span>
+                                        </div>
+                                        <div class="separator-line">
+                                            <div class="vs-badge">VS</div>
+                                        </div>
+                                        <div class="side after"
+                                            style="background-image: url('../src/images/escola-solucao.png');">
+                                            <span class="label bg-success text-white">SOLUÇÃO</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 text-center">
+                                        <h4 class="text-white mb-1 fw-bold">Escola Secundária Horizon</h4>
+                                        <span class="text-primary small fw-bold">PORTAL ACADÉMICO INTEGRADO</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-btn glass-btn"><i class="fa-solid fa-chevron-left"></i></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                    <span class="carousel-control-btn glass-btn"><i class="fa-solid fa-chevron-right"></i></span>
+                </button>
+            </div>
+
+            <!-- TESTIMONIALS -->
+            <div class="row mt-5 pt-5 justify-content-center">
+                <div class="col-12 text-center mb-4">
+                    <h5 class="text-muted-light small text-uppercase tracking-widest" data-i18n="testi_title">Clientes Satisfeitos</h5>
+                </div>
+                <div class="col-lg-5 col-md-6 mb-4">
+                    <div class="testimonial-card h-100">
+                        <div class="d-flex mb-3 text-warning small">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-white fst-italic mb-4" data-i18n="testi_1">"O M-Pesa automático no site mudou tudo. Não precisamos mais confirmar recibos manualmente no WhatsApp. Profissionalismo puro."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center text-white fw-bold" style="width: 40px; height: 40px;">CM</div>
+                            <div class="ms-3">
+                                <h6 class="text-white mb-0 fw-bold">Carlos Machava</h6>
+                                <small class="text-muted">CEO, Machava Retail</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 mb-4">
+                    <div class="testimonial-card h-100">
+                        <div class="d-flex mb-3 text-warning small">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-white fst-italic mb-4" data-i18n="testi_2">"A Lumora entendeu nossa necessidade de passar confiança internacional. O site ficou rápido e responsivo."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center text-white fw-bold" style="width: 40px; height: 40px;">AS</div>
+                            <div class="ms-3">
+                                <h6 class="text-white mb-0 fw-bold">Ana Santos</h6>
+                                <small class="text-muted" data-i18n="testi_2_role">Diretora, Global Partners MZ</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="precos" class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center mb-5 pb-4">
+                <span class="text-primary text-uppercase fw-bold tracking-widest small" data-i18n="price_mini_title">Investimento</span>
+                <h2 class="fw-bold text-white display-5 mt-2" data-i18n="price_title">Planos Transparentes</h2>
+                <p class="text-muted-light" data-i18n="price_sub_desc">Sem taxas ocultas. Preços para o mercado Local e Internacional.</p>
+            </div>
+            <div class="row g-4 align-items-center justify-content-center">
+                
+                <!-- PLANO 1 -->
+                <div class="col-lg-4">
+                    <div class="pricing-card-neon">
+                        <div class="card-header-neon text-center">
+                            <h5 data-i18n="price_basic" class="text-muted-light">Essencial</h5>
+                            <!-- Preço Híbrido: MT e USD -->
+                            <h3 class="display-6 fw-bold">18.500 <small class="fs-6">MT</small></h3>
+                            <!-- USD Ajustado para mercado internacional ($499) -->
+                            <span class="text-primary fw-bold small" data-i18n="price_usd_1">ou $499 USD</span>
+                        </div>
+                        <div class="card-body-neon">
+                            <ul>
+                                <li data-i18n="price_basic_1">Site One-Page (Página Única)</li>
+                                <li>2 Contas de Email Profissional</li>
+                                <li data-i18n="price_basic_2">100% Mobile Friendly</li>
+                                <li data-i18n="price_basic_3">Botão WhatsApp Flutuante</li>
+                                <li data-i18n="price_basic_4">Entrega em 7-10 dias</li>
+                                <li class="text-white fw-bold" data-i18n="free_hosting">Domínio Grátis (1º ano)</li>
+                            </ul>
+                            <button class="btn btn-outline-glass w-100 rounded-pill mt-4 fw-bold" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                <span data-i18n="btn_quote">Escolher Essencial</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PLANO 2 -->
+                <div class="col-lg-4">
+                    <div class="pricing-card-neon featured">
+                        <div class="badge-best-value" data-i18n="best_value">RECOMENDADO</div>
+                        <div class="card-header-neon text-center">
+                            <h5 class="text-primary fw-bold" data-i18n="price_pro">Profissional</h5>
+                            <!-- Preço Híbrido: MT e USD -->
+                            <h3 class="text-white display-5 fw-bold">42.000 <small class="fs-6">MT</small></h3>
+                            <!-- USD Ajustado para mercado internacional ($1,200) -->
+                            <span class="text-warning fw-bold small" data-i18n="price_usd_2">ou $1,200 USD</span>
+                        </div>
+                        <div class="card-body-neon">
+                            <ul>
+                                <li data-i18n="price_pro_1">Site Completo (Até 7 páginas)</li>
+                                <li>10 Contas de Email Profissional</li>
+                                <li data-i18n="price_pro_2">SEO Otimizado (Google Maps)</li>
+                                <li data-i18n="price_pro_3">Painel de Gestão (WordPress)</li>
+                                <li data-i18n="price_pro_4">Integração Facebook/Instagram</li>
+                                <li>Entrega em 15-20 dias</li>
+                                <li class="text-white fw-bold" data-i18n="free_hosting">Domínio & Hospedagem Grátis (1 Ano)</li>
+                            </ul>
+                            <button class="btn btn-accent-glow w-100 rounded-pill mt-4 fw-bold pulse-effect" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                <span data-i18n="btn_quote_pro">Quero Este Plano</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PLANO 3 -->
+                <div class="col-lg-4">
+                    <div class="pricing-card-neon">
+                        <div class="card-header-neon text-center">
+                            <h5 data-i18n="price_prem" class="text-muted-light">Loja Online / Sistemas</h5>
+                            <h3 class="display-6 fw-bold">Sob Orçamento</h3>
+                            <span class="text-primary fw-bold small" data-i18n="price_usd_3">Custom Quote</span>
+                        </div>
+                        <div class="card-body-neon">
+                            <ul>
+                                <li data-i18n="price_prem_1">Produtos Ilimitados</li>
+                                <li data-i18n="price_prem_2">Pagamentos (M-Pesa / e-Mola)</li>
+                                <li data-i18n="price_prem_3">Gestão de Stocks e Clientes</li>
+                                <li data-i18n="price_prem_4">Treinamento da Equipe</li>
+                                <li>Suporte Prioritário</li>
+                            </ul>
+                            <button class="btn btn-outline-glass w-100 rounded-pill mt-4 fw-bold" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                <span data-i18n="btn_quote_spec">Falar com Consultor</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOVA SEÇÃO: FLUXO DE PAGAMENTO GLOBAL -->
+    <section id="pagamentos-global" class="section-padding">
+        <div class="container">
+            <div class="glass-container border-glow p-5">
+                <div class="text-center mb-5">
+                    <span class="text-primary text-uppercase fw-bold tracking-widest small" data-i18n="pay_method_mini">Segurança</span>
+                    <h2 class="fw-bold text-white display-5 mt-2" data-i18n="pay_method_title">Fluxo Financeiro Global</h2>
+                    <p class="text-muted-light" data-i18n="pay_method_desc">Processo simplificado e seguro para clientes Internacionais e de Moçambique.</p>
+                </div>
+
+                <div class="row g-4 align-items-center">
+                    <!-- Passo 1 -->
+                    <div class="col-md-3 text-center">
+                        <div class="service-icon-box blue-glow mx-auto mb-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <h5 class="text-white fw-bold" data-i18n="pay_step_1_title">Orçamento & Invoice</h5>
+                        <p class="small " data-i18n="pay_step_1_desc">Enviamos uma Invoice oficial com todos os detalhes do serviço.</p>
+                    </div>
+
+                    <!-- Seta -->
+                    <div class="col-md-1 d-none d-md-block text-center text-primary fs-3">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                    <!-- Passo 2 -->
+                    <div class="col-md-4 text-center">
+                        <div class="service-icon-box purple-glow mx-auto mb-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                            <i class="fa-brands fa-paypal"></i>
+                        </div>
+                        <h5 class="text-white fw-bold" data-i18n="pay_step_2_title">Pagamento Seguro (50%)</h5>
+                        <p class="small " data-i18n="pay_step_2_desc">
+                            <strong>Internacional:</strong> PayPal (Proteção ao Comprador) ou SWIFT.<br>
+                            <strong>Local:</strong> M-Pesa, e-Mola ou Transferência Bancária.
+                        </p>
+                    </div>
+
+                    <!-- Seta -->
+                    <div class="col-md-1 d-none d-md-block text-center text-primary fs-3">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                    <!-- Passo 3 -->
+                    <div class="col-md-3 text-center">
+                        <div class="service-icon-box teal-glow mx-auto mb-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h5 class="text-white fw-bold" data-i18n="pay_step_3_title">Desenvolvimento & Entrega</h5>
+                        <p class="small " data-i18n="pay_step_3_desc">Iniciamos o projeto imediatamente. Os 50% finais apenas na entrega.</p>
+                    </div>
+                </div>
+
+                <div class="mt-5 text-center">
+                    <div class="d-inline-flex align-items-center gap-4 bg-dark bg-opacity-50 px-4 py-2 rounded-pill border border-white border-opacity-10 flex-wrap justify-content-center">
+                        <i class="fa-brands fa-paypal fa-xl text-white" title="PayPal"></i>
+                        <i class="fa-brands fa-cc-visa fa-xl text-white" title="Visa"></i>
+                        <i class="fa-brands fa-cc-mastercard fa-xl text-white" title="Mastercard"></i>
+                        <div class="vr bg-secondary opacity-50" style="height: 20px;"></div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1hv c/15/M-PESA_LOGO-01.svg/1200px-M-PESA_LOGO-01.svg.png" alt="M-Pesa" style="height: 18px; filter: brightness(0) invert(1);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <span class="text-primary text-uppercase fw-bold tracking-widest small" data-i18n="faq_mini_title">Dúvidas Frequentes</span>
+                        <h2 class="fw-bold text-white display-5 mt-2" data-i18n="faq_title">Perguntas</h2>
+                    </div>
+
+                    <div class="accordion accordion-flush" id="faqAccordion">
+                        <div class="accordion-item glass-accordion mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    <span data-i18n="faq_1_q">Quanto tempo leva para o site ficar pronto?</span>
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" data-i18n="faq_1_a">
+                                    Depende do projeto. Sites institucionais levam cerca de 7 a 10 dias. Lojas Virtuais, cerca de 20 a 30 dias. Cumprimos rigorosamente os prazos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item glass-accordion mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqINT">
+                                    <span data-i18n="faq_int_q">Moro fora de Moçambique. Como pago?</span>
+                                </button>
+                            </h2>
+                            <div id="faqINT" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" data-i18n="faq_int_a">
+                                    Para clientes internacionais, aceitamos PayPal (mais seguro e rápido) ou Transferência Bancária Internacional (SWIFT). O processo é simples e enviamos Invoice oficial.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item glass-accordion mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    <span data-i18n="faq_3_q">Tenho suporte se tiver problemas?</span>
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" data-i18n="faq_3_a">
+                                    Sim! Oferecemos 30 dias de suporte gratuito após a entrega. Também temos planos de manutenção mensal.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item glass-accordion mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    <span data-i18n="faq_4_q">O processo é 100% online?</span>
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" data-i18n="faq_5_a">
+                                    Sim. Usamos WhatsApp, Zoom e Google Meet. Contratos digitais e pagamentos seguros. Atendemos clientes em Portugal, EUA e África do Sul sem sair de Maputo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section-padding bg-darker">
+        <div class="container">
+            <div class="glass-container border-glow">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1 p-4 p-lg-5">
+                        <span class="text-primary text-uppercase fw-bold tracking-widest small">Sobre a Agência</span>
+                        <h2 class="mb-4 display-5 fw-bold text-white mt-2" data-i18n="about_title">Criamos valor real, não apenas código.</h2>
+
+                        <p class="text-muted-light lead mb-4" data-i18n="about_desc_1">
+                            A Lumora Tech nasceu com uma missão: <strong>Modernizar Moçambique através da tecnologia.</strong>
+                        </p>
+                        <p class="text-muted-light mb-4 small" data-i18n="about_desc_2">
+                            Entendemos que um site é um investimento. Focamos em design que vende e tecnologia que não falha.
+                        </p>
+
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-check-circle text-primary me-3 fs-5"></i>
+                                <span class="text-white" data-i18n="about_foc_1">Foco em Retorno do Investimento (ROI)</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-globe text-primary me-3 fs-5"></i>
+                                <span class="text-white" data-i18n="about_foc_global">Padrão de Qualidade Internacional</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 order-1 order-lg-2 p-0">
+                        <div class="about-image-wrapper h-100">
+                            <!-- Imagem profissional -->
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid w-100 h-100 object-fit-cover rounded-top-3 rounded-lg-start-0 rounded-lg-end-3" alt="Equipa de desenvolvimento Lumora Tech">
+                            <div class="about-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-premium">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="brand-icon me-2">
+                            <i class="fa-solid fa-layer-group small"></i>
+                        </div>
+                        <h4 class="fw-bold text-white m-0">Lumora Tech</h4>
+                    </div>
+                    <p class="text-muted-light mb-4" data-i18n="footer_desc">Agência digital focada em resultados. Transformamos ideias em negócios lucrativos.</p>
+                    <div class="social-links-footer d-flex gap-3">
+                        <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white fw-bold mb-4">Empresa</h6>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#inicio" data-i18n="nav_home">Início</a></li>
+                        <li><a href="#processo" data-i18n="nav_process">Metodologia</a></li>
+                        <li><a href="#portfolio" data-i18n="nav_portfolio">Portfólio</a></li>
+                        <li><a href="#precos" data-i18n="nav_prices">Preços</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white fw-bold mb-4" data-i18n="nav_services">Serviços</h6>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#" data-i18n="serv_link_1">Criação de Sites</a></li>
+                        <li><a href="#" data-i18n="serv_link_2">Lojas Virtuais</a></li>
+                        <li><a href="#" data-i18n="serv_link_3">Sistemas Web</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="text-white fw-bold mb-4">Contato</h6>
+                    <p class="small text-muted-light mb-2"><i class="fa-solid fa-envelope me-2 text-primary"></i> contacto@lumoratech.co.mz</p>
+                    <p class="small text-muted-light mb-2"><i class="fa-solid fa-phone me-2 text-primary"></i> +258 84 448 5042</p>
+                    <p class="small text-muted-light"><i class="fa-solid fa-location-dot me-2 text-primary"></i> Maputo, Moçambique (Global Remote)</p>
+                </div>
+            </div>
+            <div class="border-top border-white-10 mt-5 pt-4 text-center">
+                <p class="small mb-0 text-muted">&copy; 2025 Lumora Tech. Todos os direitos reservados. Design & Dev por Alfredo Novela.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DE CONTACTO -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-modal border-glow">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white fw-bold" data-i18n="modal_contact_title">Solicitar Orçamento</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="text-muted-light mb-4 small" data-i18n="modal_contact_desc">Preencha rapidamente. Vamos redirecioná-lo para nosso WhatsApp Comercial.</p>
+                    <form id="whatsappForm">
+                        <div class="mb-3">
+                            <label for="waName" class="form-label text-white small fw-bold" data-i18n="modal_label_name">Seu Nome</label>
+                            <!-- CORREÇÃO: Adicionado data-i18n-placeholder -->
+                            <input type="text" id="waName" class="form-control form-control-glass" required placeholder="Ex: João da Silva" data-i18n-placeholder="modal_ph_name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="waEmail" class="form-label text-white small fw-bold" data-i18n="modal_label_email">Melhor Email</label>
+                            <!-- CORREÇÃO: Adicionado data-i18n-placeholder -->
+                            <input type="email" id="waEmail" class="form-control form-control-glass" required placeholder="Ex: joao@empresa.com" data-i18n-placeholder="modal_ph_email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="waType" class="form-label text-white small fw-bold" data-i18n="modal_label_obj">O que você precisa?</label>
+                            <select id="waType" class="form-select form-control-glass">
+                                <!-- CORREÇÃO: Adicionados data-i18n nas opções -->
+                                <option value="Site Profissional" data-i18n="opt_site">Quero um Site Profissional</option>
+                                <option value="Loja Virtual" data-i18n="opt_store">Quero Vender Online (E-commerce)</option>
+                                <option value="Sistema de Gestão" data-i18n="opt_system">Preciso de um Sistema/App</option>
+                                <option value="Outro" data-i18n="opt_other">Outro assunto</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100 py-3 fw-bold rounded-pill shadow-lg">
+                            <i class="fa-brands fa-whatsapp me-2"></i> <span data-i18n="modal_btn_submit">Falar com Especialista Agora</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE PORTFOLIO -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content glass-modal">
+                <div class="modal-header border-0 pb-0">
+                    <div>
+                        <span class="badge bg-primary-subtle text-primary border border-primary-subtle mb-2" id="modalCategory">Categoria</span>
+                        <h3 class="modal-title text-white fw-bold" id="modalTitle">Nome do Projeto</h3>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 pt-3">
+                    <div class="container-fluid">
+                        <div class="row g-0">
+                            <!-- Antes -->
+                            <div class="col-lg-6 border-end border-white-10">
+                                <div class="p-4 p-lg-5">
+                                    <div class="d-flex align-items-center mb-3 text-danger-subtle">
+                                        <i class="fa-solid fa-triangle-exclamation me-2"></i>
+                                        <h5 class="m-0 fw-bold" data-i18n="modal_challenge">O Problema</h5>
+                                    </div>
+                                    <div class="comparison-img-wrapper mb-3">
+                                        <img id="modalBeforeImg" src="" class="img-fluid rounded border border-danger border-opacity-25" alt="Imagem do problema anterior">
+                                    </div>
+                                    <p class="text-muted-light" id="modalBeforeDesc">Descrição do problema.</p>
+                                </div>
+                            </div>
+                            <!-- Depois -->
+                            <div class="col-lg-6">
+                                <div class="p-4 p-lg-5 bg-gradient-success-dark h-100">
+                                    <div class="d-flex align-items-center mb-3 text-success">
+                                        <i class="fa-solid fa-trophy me-2"></i>
+                                        <h5 class="m-0 fw-bold" data-i18n="modal_solution">A Solução Lumora</h5>
+                                    </div>
+                                    <div class="comparison-img-wrapper mb-3 shadow-lg-glow">
+                                        <img id="modalAfterImg" src="" class="img-fluid rounded border border-success border-opacity-50" alt="Imagem da solução implementada">
+                                    </div>
+                                    <p class="text-white" id="modalAfterDesc">Descrição da solução.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-white-10 justify-content-center p-4">
+                    <a href="#" id="modalLink" target="_blank" class="btn btn-primary-glow px-5 rounded-pill fw-bold">
+                        <i class="fa-solid fa-external-link-alt me-2"></i> <span data-i18n="modal_visit">Ver Projeto Online</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/scripts/script.js"></script>
+</body>
+</html>
